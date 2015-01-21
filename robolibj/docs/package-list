@@ -6,8 +6,6 @@ io.github.robolib.exception
 io.github.robolib.framework
 io.github.robolib.hal
 io.github.robolib.iface
-io.github.robolib.input
-io.github.robolib.input.i2c
 io.github.robolib.input.limitswitch
 io.github.robolib.livewindow
 io.github.robolib.output
