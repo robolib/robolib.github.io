@@ -12,5 +12,6 @@ io.github.robolib.pid
 io.github.robolib.pneumatic
 io.github.robolib.robot
 io.github.robolib.sensor
+io.github.robolib.sensor.mpu6050
 io.github.robolib.util
 io.github.robolib.util.log
