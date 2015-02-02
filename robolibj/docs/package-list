@@ -1,10 +1,10 @@
 io.github.robolib.command
 io.github.robolib.communication
 io.github.robolib.control
-io.github.robolib.exception
 io.github.robolib.framework
 io.github.robolib.hal
 io.github.robolib.iface
+io.github.robolib.lang
 io.github.robolib.livewindow
 io.github.robolib.output
 io.github.robolib.pid
