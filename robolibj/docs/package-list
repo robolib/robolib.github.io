@@ -10,6 +10,8 @@ io.github.robolib.module.controller
 io.github.robolib.module.iface
 io.github.robolib.module.sensor
 io.github.robolib.module.sensor.mpu6050
+io.github.robolib.nettable
+io.github.robolib.nettable.entry
 io.github.robolib.robot
 io.github.robolib.util
 io.github.robolib.util.log
