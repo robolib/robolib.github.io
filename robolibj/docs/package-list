@@ -1,12 +1,12 @@
 io.github.robolib
 io.github.robolib.command
-io.github.robolib.control
 io.github.robolib.identifier
 io.github.robolib.jni
 io.github.robolib.lang
 io.github.robolib.module
 io.github.robolib.module.actuator
 io.github.robolib.module.controller
+io.github.robolib.module.hid
 io.github.robolib.module.iface
 io.github.robolib.module.sensor
 io.github.robolib.module.sensor.mpu6050
@@ -15,4 +15,5 @@ io.github.robolib.nettable.entry
 io.github.robolib.robot
 io.github.robolib.util
 io.github.robolib.util.log
+io.github.robolib.util.mapper
 org.json
