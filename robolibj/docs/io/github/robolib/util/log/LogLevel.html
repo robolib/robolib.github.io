@@ -121,11 +121,11 @@ var activeTableTab = "activeTableTab";
 <pre>public enum <span class="typeNameLabel">LogLevel</span>
 extends java.lang.Enum&lt;<a href="../../../../../io/github/robolib/util/log/LogLevel.html" title="enum in io.github.robolib.util.log">LogLevel</a>&gt;</pre>
 <div class="block">A Logging class.
- 
+
  <p>Each Class that wishes to log must call the <code>Logger.get</code> method with itself
  as the only argument, or with an optional string value. This will return a new Logger
  object.</p>
- 
+
  <p>To log something, the Calling class must call the desired level method
  <code>info, debug, warn, error, fatal</code> with the message to be logged. If the
  calling the err or fatal classes, a Throwable object must be passed as a second
@@ -134,10 +134,10 @@ extends java.lang.Enum&lt;<a href="../../../../../io/github/robolib/util/log/Log
  stack trace, and kill the program.</p></div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
-<dd>noriah Reuland <vix@noriah.dev></dd>
+<dd>noriah <vix@noriah.dev></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../io/github/robolib/util/log/ILogger.html" title="class in io.github.robolib.util.log"><code>ILogger</code></a>, 
-<a href="../../../../../io/github/robolib/util/log/Logger.html" title="class in io.github.robolib.util.log"><code>Logger</code></a>, 
+<dd><a href="../../../../../io/github/robolib/util/log/ILogger.html" title="class in io.github.robolib.util.log"><code>ILogger</code></a>,
+<a href="../../../../../io/github/robolib/util/log/Logger.html" title="class in io.github.robolib.util.log"><code>Logger</code></a>,
 <a href="../../../../../io/github/robolib/util/log/LogOutput.html" title="interface in io.github.robolib.util.log"><code>LogOutput</code></a></dd>
 </dl>
 </li>
@@ -380,7 +380,7 @@ for (LogLevel c : LogLevel.values())
 <pre>public static&nbsp;<a href="../../../../../io/github/robolib/util/log/LogLevel.html" title="enum in io.github.robolib.util.log">LogLevel</a>&nbsp;valueOf(java.lang.String&nbsp;name)</pre>
 <div class="block">Returns the enum constant of this type with the specified name.
 The string must match <i>exactly</i> an identifier used to declare an
-enum constant in this type.  (Extraneous whitespace characters are 
+enum constant in this type.  (Extraneous whitespace characters are
 not permitted.)</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

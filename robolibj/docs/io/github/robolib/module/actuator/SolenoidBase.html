@@ -118,7 +118,7 @@ extends java.lang.Object</pre>
 <div class="block">The Class SolenoidBase.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
-<dd>noriah Reuland <vix@noriah.dev></dd>
+<dd>noriah <vix@noriah.dev></dd>
 </dl>
 </li>
 </ul>
@@ -447,7 +447,7 @@ extends java.lang.Object</pre>
 <h4>getPCMSolenoidBlacklist</h4>
 <pre>public final&nbsp;byte&nbsp;getPCMSolenoidBlacklist(int&nbsp;module)</pre>
 <div class="block">Reads complete solenoid blacklist for all 8 solenoids as a single byte.
- 
+
       If a solenoid is shorted, it is added to the blacklist and
       disabled until power cycle, or until faults are cleared.</div>
 <dl>
@@ -471,7 +471,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>module</code> - </dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true if PCM sticky fault is set : The common 
+<dd>true if PCM sticky fault is set : The common
           highside solenoid voltage rail is too low,
           most likely a solenoid channel is shorted.</dd>
 </dl>
@@ -488,7 +488,7 @@ extends java.lang.Object</pre>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>module</code> - </dd>
 <dt><span class="returnLabel">Returns:</span></dt>
-<dd>true if PCM is in fault state : The common 
+<dd>true if PCM is in fault state : The common
           highside solenoid voltage rail is too low,
           most likely a solenoid channel is shorted.</dd>
 </dl>
@@ -504,8 +504,8 @@ extends java.lang.Object</pre>
 <div class="block">Clear ALL sticky faults inside PCM that Compressor is wired to.
 
  If a sticky fault is set, then it will be persistently cleared.  Compressor drive
-      maybe momentarily disable while flags are being cleared. Care should be 
-      taken to not call this too frequently, otherwise normal compressor 
+      maybe momentarily disable while flags are being cleared. Care should be
+      taken to not call this too frequently, otherwise normal compressor
       functionality may be prevented.
 
  If no sticky faults are set then this call will have no effect.</div>

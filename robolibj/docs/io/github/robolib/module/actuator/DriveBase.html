@@ -118,7 +118,7 @@ extends java.lang.Object
 implements <a href="../../../../../io/github/robolib/module/actuator/ActuatorModule.html" title="interface in io.github.robolib.module.actuator">ActuatorModule</a>, <a href="../../../../../io/github/robolib/module/MotorSafety.html" title="interface in io.github.robolib.module">MotorSafety</a></pre>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
-<dd>noriah Reuland <vix@noriah.dev></dd>
+<dd>noriah <vix@noriah.dev></dd>
 </dl>
 </li>
 </ul>
@@ -985,7 +985,7 @@ implements <a href="../../../../../io/github/robolib/module/actuator/ActuatorMod
 <h4>setLeftMotors</h4>
 <pre>public&nbsp;void&nbsp;setLeftMotors(double&nbsp;speed)</pre>
 <div class="block">Set the speed of the left motors.
- 
+
  The motors on the left side of the robot are set to "speed".</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1001,7 +1001,7 @@ implements <a href="../../../../../io/github/robolib/module/actuator/ActuatorMod
 <h4>setRightMotors</h4>
 <pre>public&nbsp;void&nbsp;setRightMotors(double&nbsp;speed)</pre>
 <div class="block">Set the speed of the right motors.
- 
+
  The motors on the right side of the robot are set to "speed".</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1017,7 +1017,7 @@ implements <a href="../../../../../io/github/robolib/module/actuator/ActuatorMod
 <h4>setMotors</h4>
 <pre>public&nbsp;void&nbsp;setMotors(double&nbsp;speed)</pre>
 <div class="block">Set the speed of all the motors to a single value.
- 
+
  The motors are set to "speed".</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1034,7 +1034,7 @@ implements <a href="../../../../../io/github/robolib/module/actuator/ActuatorMod
 <pre>public&nbsp;void&nbsp;setMotors(double&nbsp;left,
                       double&nbsp;right)</pre>
 <div class="block">Set the speed of the right and left motors.
- 
+
  The motors are set to "left" and "right".</div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -1071,7 +1071,7 @@ implements <a href="../../../../../io/github/robolib/module/actuator/ActuatorMod
 <h4>setMotors</h4>
 <pre>protected&nbsp;void&nbsp;setMotors()</pre>
 <div class="block">Set the speed of the motors to the values in m_wheelSpeeds.
- 
+
  Set all the motors to their respective values in the
  m_wheelSpeeds array.</div>
 </li>
@@ -1158,15 +1158,15 @@ implements <a href="../../../../../io/github/robolib/module/actuator/ActuatorMod
 <h4>makeSafe</h4>
 <pre>public&nbsp;void&nbsp;makeSafe()</pre>
 <div class="block">Make this actuator safe.
-  
+
  This should disable the module and keep it disabled.
  There should be no way to recover from a "safe" state.
- 
+
  This is here to allow for exceptions in function, to keep
  the code resetting (switching game mode) from affecting
  the state, in case an external sensor detects that the module
  will cause damage to itself or others (or even people)
- 
+
  To recover from this state, the code should need to be restarted.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>

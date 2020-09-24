@@ -123,7 +123,7 @@ extends <a href="../../../../io/github/robolib/command/Command.html" title="clas
 <div class="block">The Class CommandGroup.</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
-<dd>noriah Reuland <vix@noriah.dev></dd>
+<dd>noriah <vix@noriah.dev></dd>
 </dl>
 </li>
 </ul>
@@ -483,11 +483,11 @@ extends <a href="../../../../io/github/robolib/command/Command.html" title="clas
 <pre>public final&nbsp;void&nbsp;addSequential(<a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command">Command</a>&nbsp;command)</pre>
 <div class="block">Adds a new <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> to the group.  The <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> will be started after
  all the previously added <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Commands</code></a>.
- 
+
  <p>Note that any requirements the given <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> has will be added to the
  group.  For this reason, a <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command's</code></a> requirements can not be changed after
  being added to a group.</p>
- 
+
  <p>It is recommended that this method be called in the constructor.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -506,15 +506,15 @@ extends <a href="../../../../io/github/robolib/command/Command.html" title="clas
 <div class="block">Adds a new <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> to the group with a given timeout.
  The <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> will be started after all the previously added commands.
  A timeout of -1 means it will not time out. This is the same a omitting the timeout value.
- 
+
  <p>Once the <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> is started, it will be run until it finishes or the time
  expires, whichever is sooner.  Note that the given <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> will have no
  knowledge that it is on a timer.</p>
- 
+
  <p>Note that any requirements the given <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> has will be added to the
  group.  For this reason, a <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command's</code></a> requirements can not be changed after
  being added to a group.</p>
- 
+
  <p>It is recommended that this method be called in the constructor.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -532,18 +532,18 @@ extends <a href="../../../../io/github/robolib/command/Command.html" title="clas
 <pre>public final&nbsp;void&nbsp;addParallel(<a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command">Command</a>&nbsp;command)</pre>
 <div class="block">Adds a new child <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> to the group.  The <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> will be started after
  all the previously added <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Commands</code></a>.
- 
+
  <p>Instead of waiting for the child to finish, a <a href="../../../../io/github/robolib/command/CommandGroup.html" title="class in io.github.robolib.command"><code>CommandGroup</code></a> will have it
  run at the same time as the subsequent <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Commands</code></a>.  The child will run until either
  it finishes, a new child with conflicting requirements is started, or
  the main sequence runs a <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> with conflicting requirements.  In the latter
  two cases, the child will be canceled even if it says it can't be
  interrupted.</p>
- 
+
  <p>Note that any requirements the given <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> has will be added to the
  group.  For this reason, a <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command's</code></a> requirements can not be changed after
  being added to a group.</p>
- 
+
  <p>It is recommended that this method be called in the constructor.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
@@ -562,22 +562,22 @@ extends <a href="../../../../io/github/robolib/command/Command.html" title="clas
 <div class="block">Adds a new child <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> to the group with the given timeout.  The <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> will be started after
  all the previously added <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Commands</code></a>.
  A timeout of -1 means it will not time out. This is the same a omitting the timeout value.
- 
+
  <p>Once the <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> is started, it will run until it finishes, is interrupted,
  or the time expires, whichever is sooner.  Note that the given <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> will have no
  knowledge that it is on a timer.</p>
- 
+
  <p>Instead of waiting for the child to finish, a <a href="../../../../io/github/robolib/command/CommandGroup.html" title="class in io.github.robolib.command"><code>CommandGroup</code></a> will have it
  run at the same time as the subsequent <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Commands</code></a>.  The child will run until either
  it finishes, the timeout expires, a new child with conflicting requirements is started, or
  the main sequence runs a <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> with conflicting requirements.  In the latter
  two cases, the child will be canceled even if it says it can't be
  interrupted.</p>
- 
+
  <p>Note that any requirements the given <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command</code></a> has will be added to the
  group.  For this reason, a <a href="../../../../io/github/robolib/command/Command.html" title="class in io.github.robolib.command"><code>Command's</code></a> requirements can not be changed after
  being added to a group.</p>
- 
+
  <p>It is recommended that this method be called in the constructor.</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>

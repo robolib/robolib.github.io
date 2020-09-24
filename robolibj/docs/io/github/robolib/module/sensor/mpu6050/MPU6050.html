@@ -127,13 +127,13 @@ var activeTableTab = "activeTableTab";
 extends <a href="../../../../../../io/github/robolib/module/iface/I2C.html" title="class in io.github.robolib.module.iface">I2C</a>
 implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerometer.html" title="interface in io.github.robolib.module.sensor">IAccelerometer</a></pre>
 <div class="block">MPU6050 Accelerometer/Gyroscope class.
- 
+
  Converted from C++ to Java
  Original file part of i2cdevlib project
  https://github.com/jrowberg/i2cdevlib/blob/master/Arduino/MPU6050/MPU6050.cpp</div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
-<dd>Jeff Rowberg <jeff@rowberg.net>, noriah Reuland <vix@noriah.dev></dd>
+<dd>Jeff Rowberg <jeff@rowberg.net>, noriah <vix@noriah.dev></dd>
 </dl>
 </li>
 </ul>
@@ -170,7 +170,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <td class="colFirst"><code>static class&nbsp;</code></td>
 <td class="colLast"><code><span class="memberNameLink"><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.DLPFilterMode.html" title="enum in io.github.robolib.module.sensor.mpu6050">MPU6050.DLPFilterMode</a></span></code>
 <div class="block">Enum representation of Low-Pass Filter values
- 
+
  The DLPF_CFG parameter sets the digital low pass filter configuration.</div>
 </td>
 </tr>
@@ -6707,8 +6707,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dd><code>port</code> - the I2C port on the RIO</dd>
 <dd><code>addr</code> - I2C address</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_DEFAULT_ADDRESS"><code>MPU6050_DEFAULT_ADDRESS</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_ADDRESS_AD0_LOW"><code>MPU6050_ADDRESS_AD0_LOW</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_DEFAULT_ADDRESS"><code>MPU6050_DEFAULT_ADDRESS</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_ADDRESS_AD0_LOW"><code>MPU6050_ADDRESS_AD0_LOW</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_ADDRESS_AD0_HIGH"><code>MPU6050_ADDRESS_AD0_HIGH</code></a></dd>
 </dl>
 </li>
@@ -6829,7 +6829,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>rate</code> - New sample rate divider</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getRate--"><code>getRate()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getRate--"><code>getRate()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_SMPLRT_DIV"><code>MPU6050_RA_SMPLRT_DIV</code></a></dd>
 </dl>
 </li>
@@ -6871,8 +6871,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>sync</code> - New FSYNC configuration value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getExternalFrameSync--"><code>getExternalFrameSync()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_CONFIG"><code>MPU6050_RA_CONFIG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getExternalFrameSync--"><code>getExternalFrameSync()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_CONFIG"><code>MPU6050_RA_CONFIG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.EXTFrameSyncBitLocation.html" title="enum in io.github.robolib.module.sensor.mpu6050"><code>MPU6050.EXTFrameSyncBitLocation</code></a></dd>
 </dl>
 </li>
@@ -6885,7 +6885,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <h4>getDLPFMode</h4>
 <pre>public&nbsp;<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.DLPFilterMode.html" title="enum in io.github.robolib.module.sensor.mpu6050">MPU6050.DLPFilterMode</a>&nbsp;getDLPFMode()</pre>
 <div class="block">Get digital low-pass filter configuration.
- 
+
  The DLPF_CFG parameter sets the digital low pass filter configuration. It
  also determines the internal sampling rate used by the device as shown in
  the table below.
@@ -6897,9 +6897,9 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>DLFP configuration</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_CONFIG"><code>MPU6050_RA_CONFIG</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_CFG_DLPF_CFG_BIT"><code>MPU6050_CFG_DLPF_CFG_BIT</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_CFG_DLPF_CFG_LENGTH"><code>MPU6050_CFG_DLPF_CFG_LENGTH</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_CONFIG"><code>MPU6050_RA_CONFIG</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_CFG_DLPF_CFG_BIT"><code>MPU6050_CFG_DLPF_CFG_BIT</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_CFG_DLPF_CFG_LENGTH"><code>MPU6050_CFG_DLPF_CFG_LENGTH</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.DLPFilterMode.html" title="enum in io.github.robolib.module.sensor.mpu6050"><code>MPU6050.DLPFilterMode</code></a></dd>
 </dl>
 </li>
@@ -6916,11 +6916,11 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>mode</code> - New DLFP configuration setting</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getDLPFMode--"><code>getDLPFMode()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.DLPFilterMode.html#BW_256Hz"><code>MPU6050.DLPFilterMode.BW_256Hz</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_CONFIG"><code>MPU6050_RA_CONFIG</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_CFG_DLPF_CFG_BIT"><code>MPU6050_CFG_DLPF_CFG_BIT</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_CFG_DLPF_CFG_LENGTH"><code>MPU6050_CFG_DLPF_CFG_LENGTH</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getDLPFMode--"><code>getDLPFMode()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.DLPFilterMode.html#BW_256Hz"><code>MPU6050.DLPFilterMode.BW_256Hz</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_CONFIG"><code>MPU6050_RA_CONFIG</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_CFG_DLPF_CFG_BIT"><code>MPU6050_CFG_DLPF_CFG_BIT</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_CFG_DLPF_CFG_LENGTH"><code>MPU6050_CFG_DLPF_CFG_LENGTH</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.DLPFilterMode.html" title="enum in io.github.robolib.module.sensor.mpu6050"><code>MPU6050.DLPFilterMode</code></a></dd>
 </dl>
 </li>
@@ -6938,9 +6938,9 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current full-scale gyroscope range setting</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.GyroRange.html#FS_250"><code>MPU6050.GyroRange.FS_250</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_GYRO_CONFIG"><code>MPU6050_RA_GYRO_CONFIG</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_GCONFIG_FS_SEL_BIT"><code>MPU6050_GCONFIG_FS_SEL_BIT</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.GyroRange.html#FS_250"><code>MPU6050.GyroRange.FS_250</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_GYRO_CONFIG"><code>MPU6050_RA_GYRO_CONFIG</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_GCONFIG_FS_SEL_BIT"><code>MPU6050_GCONFIG_FS_SEL_BIT</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_GCONFIG_FS_SEL_LENGTH"><code>MPU6050_GCONFIG_FS_SEL_LENGTH</code></a></dd>
 </dl>
 </li>
@@ -6957,10 +6957,10 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>range</code> - New full-scale gyroscope range value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFullScaleGyroRange--"><code>getFullScaleGyroRange()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.GyroRange.html" title="enum in io.github.robolib.module.sensor.mpu6050"><code>MPU6050.GyroRange</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_GYRO_CONFIG"><code>MPU6050_RA_GYRO_CONFIG</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_GCONFIG_FS_SEL_BIT"><code>MPU6050_GCONFIG_FS_SEL_BIT</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFullScaleGyroRange--"><code>getFullScaleGyroRange()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.GyroRange.html" title="enum in io.github.robolib.module.sensor.mpu6050"><code>MPU6050.GyroRange</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_GYRO_CONFIG"><code>MPU6050_RA_GYRO_CONFIG</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_GCONFIG_FS_SEL_BIT"><code>MPU6050_GCONFIG_FS_SEL_BIT</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_GCONFIG_FS_SEL_LENGTH"><code>MPU6050_GCONFIG_FS_SEL_LENGTH</code></a></dd>
 </dl>
 </li>
@@ -7082,8 +7082,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current full-scale accelerometer range setting</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_ACCEL_CONFIG"><code>MPU6050_RA_ACCEL_CONFIG</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_ACONFIG_AFS_SEL_BIT"><code>MPU6050_ACONFIG_AFS_SEL_BIT</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_ACCEL_CONFIG"><code>MPU6050_RA_ACCEL_CONFIG</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_ACONFIG_AFS_SEL_BIT"><code>MPU6050_ACONFIG_AFS_SEL_BIT</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_ACONFIG_AFS_SEL_LENGTH"><code>MPU6050_ACONFIG_AFS_SEL_LENGTH</code></a></dd>
 </dl>
 </li>
@@ -7138,8 +7138,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current high-pass filter configuration</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_ACCEL_CONFIG"><code>MPU6050_RA_ACCEL_CONFIG</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.DHPFilterMode.html" title="enum in io.github.robolib.module.sensor.mpu6050"><code>MPU6050.DHPFilterMode</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_ACCEL_CONFIG"><code>MPU6050_RA_ACCEL_CONFIG</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.DHPFilterMode.html" title="enum in io.github.robolib.module.sensor.mpu6050"><code>MPU6050.DHPFilterMode</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.DHPFilterMode.html#RESET"><code>MPU6050.DHPFilterMode.RESET</code></a></dd>
 </dl>
 </li>
@@ -7156,9 +7156,9 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>bandwidth</code> - New high-pass filter configuration</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#setDHPFMode-io.github.robolib.module.sensor.mpu6050.MPU6050.DHPFilterMode-"><code>setDHPFMode(DHPFilterMode)</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_ACCEL_CONFIG"><code>MPU6050_RA_ACCEL_CONFIG</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.DHPFilterMode.html" title="enum in io.github.robolib.module.sensor.mpu6050"><code>MPU6050.DHPFilterMode</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#setDHPFMode-io.github.robolib.module.sensor.mpu6050.MPU6050.DHPFilterMode-"><code>setDHPFMode(DHPFilterMode)</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_ACCEL_CONFIG"><code>MPU6050_RA_ACCEL_CONFIG</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.DHPFilterMode.html" title="enum in io.github.robolib.module.sensor.mpu6050"><code>MPU6050.DHPFilterMode</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.DHPFilterMode.html#RESET"><code>MPU6050.DHPFilterMode.RESET</code></a></dd>
 </dl>
 </li>
@@ -7201,7 +7201,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>threshold</code> - New free-fall acceleration threshold value (LSB = 2mg)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFreefallDetectionThreshold--"><code>getFreefallDetectionThreshold()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFreefallDetectionThreshold--"><code>getFreefallDetectionThreshold()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_FF_THR"><code>MPU6050_RA_FF_THR</code></a></dd>
 </dl>
 </li>
@@ -7246,7 +7246,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>duration</code> - New free-fall duration threshold value (LSB = 1ms)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFreefallDetectionDuration--"><code>getFreefallDetectionDuration()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFreefallDetectionDuration--"><code>getFreefallDetectionDuration()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_FF_DUR"><code>MPU6050_RA_FF_DUR</code></a></dd>
 </dl>
 </li>
@@ -7293,7 +7293,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>threshold</code> - New motion detection acceleration threshold value (LSB = 2mg)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotionDetectionThreshold--"><code>getMotionDetectionThreshold()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotionDetectionThreshold--"><code>getMotionDetectionThreshold()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_THR"><code>MPU6050_RA_MOT_THR</code></a></dd>
 </dl>
 </li>
@@ -7336,7 +7336,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>duration</code> - New motion detection duration threshold value (LSB = 1ms)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotionDetectionDuration--"><code>getMotionDetectionDuration()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotionDetectionDuration--"><code>getMotionDetectionDuration()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DUR"><code>MPU6050_RA_MOT_DUR</code></a></dd>
 </dl>
 </li>
@@ -7389,7 +7389,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>threshold</code> - New zero motion detection acceleration threshold value (LSB = 2mg)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getZeroMotionDetectionThreshold--"><code>getZeroMotionDetectionThreshold()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getZeroMotionDetectionThreshold--"><code>getZeroMotionDetectionThreshold()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_ZRMOT_THR"><code>MPU6050_RA_ZRMOT_THR</code></a></dd>
 </dl>
 </li>
@@ -7433,7 +7433,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>duration</code> - New zero motion detection duration threshold value (LSB = 1ms)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getZeroMotionDetectionDuration--"><code>getZeroMotionDetectionDuration()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getZeroMotionDetectionDuration--"><code>getZeroMotionDetectionDuration()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_ZRMOT_DUR"><code>MPU6050_RA_ZRMOT_DUR</code></a></dd>
 </dl>
 </li>
@@ -7468,7 +7468,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New temperature FIFO enabled value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getTempFIFOEnabled--"><code>getTempFIFOEnabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getTempFIFOEnabled--"><code>getTempFIFOEnabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_FIFO_EN"><code>MPU6050_RA_FIFO_EN</code></a></dd>
 </dl>
 </li>
@@ -7503,7 +7503,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New gyroscope X-axis FIFO enabled value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getXGyroFIFOEnabled--"><code>getXGyroFIFOEnabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getXGyroFIFOEnabled--"><code>getXGyroFIFOEnabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_FIFO_EN"><code>MPU6050_RA_FIFO_EN</code></a></dd>
 </dl>
 </li>
@@ -7538,7 +7538,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New gyroscope Y-axis FIFO enabled value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getYGyroFIFOEnabled--"><code>getYGyroFIFOEnabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getYGyroFIFOEnabled--"><code>getYGyroFIFOEnabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_FIFO_EN"><code>MPU6050_RA_FIFO_EN</code></a></dd>
 </dl>
 </li>
@@ -7573,7 +7573,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New gyroscope Z-axis FIFO enabled value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getZGyroFIFOEnabled--"><code>getZGyroFIFOEnabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getZGyroFIFOEnabled--"><code>getZGyroFIFOEnabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_FIFO_EN"><code>MPU6050_RA_FIFO_EN</code></a></dd>
 </dl>
 </li>
@@ -7609,7 +7609,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New accelerometer FIFO enabled value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getAccelFIFOEnabled--"><code>getAccelFIFOEnabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getAccelFIFOEnabled--"><code>getAccelFIFOEnabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_FIFO_EN"><code>MPU6050_RA_FIFO_EN</code></a></dd>
 </dl>
 </li>
@@ -7644,7 +7644,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New Slave 2 FIFO enabled value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave2FIFOEnabled--"><code>getSlave2FIFOEnabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave2FIFOEnabled--"><code>getSlave2FIFOEnabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_FIFO_EN"><code>MPU6050_RA_FIFO_EN</code></a></dd>
 </dl>
 </li>
@@ -7679,7 +7679,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New Slave 1 FIFO enabled value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave1FIFOEnabled--"><code>getSlave1FIFOEnabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave1FIFOEnabled--"><code>getSlave1FIFOEnabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_FIFO_EN"><code>MPU6050_RA_FIFO_EN</code></a></dd>
 </dl>
 </li>
@@ -7714,7 +7714,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New Slave 0 FIFO enabled value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave0FIFOEnabled--"><code>getSlave0FIFOEnabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave0FIFOEnabled--"><code>getSlave0FIFOEnabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_FIFO_EN"><code>MPU6050_RA_FIFO_EN</code></a></dd>
 </dl>
 </li>
@@ -7757,7 +7757,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New multi-master enabled value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMultiMasterEnabled--"><code>getMultiMasterEnabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMultiMasterEnabled--"><code>getMultiMasterEnabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_MST_CTRL"><code>MPU6050_RA_I2C_MST_CTRL</code></a></dd>
 </dl>
 </li>
@@ -7796,7 +7796,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New wait-for-external-sensor-data enabled value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getWaitForExternalSensorEnabled--"><code>getWaitForExternalSensorEnabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getWaitForExternalSensorEnabled--"><code>getWaitForExternalSensorEnabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_MST_CTRL"><code>MPU6050_RA_I2C_MST_CTRL</code></a></dd>
 </dl>
 </li>
@@ -7831,7 +7831,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New Slave 3 FIFO enabled value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave3FIFOEnabled--"><code>getSlave3FIFOEnabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave3FIFOEnabled--"><code>getSlave3FIFOEnabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_MST_CTRL"><code>MPU6050_RA_I2C_MST_CTRL</code></a></dd>
 </dl>
 </li>
@@ -7869,7 +7869,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New slave read/write transition enabled value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveReadWriteTransitionEnabled--"><code>getSlaveReadWriteTransitionEnabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveReadWriteTransitionEnabled--"><code>getSlaveReadWriteTransitionEnabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_MST_CTRL"><code>MPU6050_RA_I2C_MST_CTRL</code></a></dd>
 </dl>
 </li>
@@ -7920,7 +7920,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
  operation, and if it is cleared, then it's a write operation. The remaining
  bits (6-0) are the 7-bit device address of the slave device.
 
- In read mode, the result of the read is placed in the lowest available 
+ In read mode, the result of the read is placed in the lowest available
  EXT_SENS_DATA register. For further information regarding the allocation of
  read results, please refer to the EXT_SENS_DATA register description
  (Registers 73 - 96).
@@ -7975,7 +7975,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dd><code>num</code> - Slave number (0-3)</dd>
 <dd><code>address</code> - New address for specified slave</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveAddress-byte-"><code>getSlaveAddress(byte)</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveAddress-byte-"><code>getSlaveAddress(byte)</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV0_ADDR"><code>MPU6050_RA_I2C_SLV0_ADDR</code></a></dd>
 </dl>
 </li>
@@ -8017,7 +8017,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dd><code>num</code> - Slave number (0-3)</dd>
 <dd><code>reg</code> - New active register for specified slave</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveRegister-byte-"><code>getSlaveRegister(byte)</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveRegister-byte-"><code>getSlaveRegister(byte)</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV0_REG"><code>MPU6050_RA_I2C_SLV0_REG</code></a></dd>
 </dl>
 </li>
@@ -8056,7 +8056,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dd><code>num</code> - Slave number (0-3)</dd>
 <dd><code>enabled</code> - New enabled value for specified slave</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveEnabled-byte-"><code>getSlaveEnabled(byte)</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveEnabled-byte-"><code>getSlaveEnabled(byte)</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV0_CTRL"><code>MPU6050_RA_I2C_SLV0_CTRL</code></a></dd>
 </dl>
 </li>
@@ -8098,7 +8098,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dd><code>num</code> - Slave number (0-3)</dd>
 <dd><code>enabled</code> - New word pair byte-swapping enabled value for specified slave</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveWordByteSwap-byte-"><code>getSlaveWordByteSwap(byte)</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveWordByteSwap-byte-"><code>getSlaveWordByteSwap(byte)</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV0_CTRL"><code>MPU6050_RA_I2C_SLV0_CTRL</code></a></dd>
 </dl>
 </li>
@@ -8139,7 +8139,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dd><code>num</code> - Slave number (0-3)</dd>
 <dd><code>mode</code> - New write mode for specified slave (0 = register address + data, 1 = data only)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveWriteMode-byte-"><code>getSlaveWriteMode(byte)</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveWriteMode-byte-"><code>getSlaveWriteMode(byte)</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV0_CTRL"><code>MPU6050_RA_I2C_SLV0_CTRL</code></a></dd>
 </dl>
 </li>
@@ -8181,7 +8181,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dd><code>num</code> - Slave number (0-3)</dd>
 <dd><code>enabled</code> - New word pair grouping order offset for specified slave</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveWordGroupOffset-byte-"><code>getSlaveWordGroupOffset(byte)</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveWordGroupOffset-byte-"><code>getSlaveWordGroupOffset(byte)</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV0_CTRL"><code>MPU6050_RA_I2C_SLV0_CTRL</code></a></dd>
 </dl>
 </li>
@@ -8220,7 +8220,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dd><code>num</code> - Slave number (0-3)</dd>
 <dd><code>length</code> - Number of bytes to read for specified slave</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveDataLength-byte-"><code>getSlaveDataLength(byte)</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveDataLength-byte-"><code>getSlaveDataLength(byte)</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV0_CTRL"><code>MPU6050_RA_I2C_SLV0_CTRL</code></a></dd>
 </dl>
 </li>
@@ -8240,7 +8240,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current address for Slave 4</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveAddress-byte-"><code>getSlaveAddress(byte)</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlaveAddress-byte-"><code>getSlaveAddress(byte)</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV4_ADDR"><code>MPU6050_RA_I2C_SLV4_ADDR</code></a></dd>
 </dl>
 </li>
@@ -8257,7 +8257,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>address</code> - New address for Slave 4</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave4Address--"><code>getSlave4Address()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave4Address--"><code>getSlave4Address()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV4_ADDR"><code>MPU6050_RA_I2C_SLV4_ADDR</code></a></dd>
 </dl>
 </li>
@@ -8292,7 +8292,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>reg</code> - New active register for Slave 4</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave4Register--"><code>getSlave4Register()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave4Register--"><code>getSlave4Register()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV4_REG"><code>MPU6050_RA_I2C_SLV4_REG</code></a></dd>
 </dl>
 </li>
@@ -8345,7 +8345,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New enabled value for Slave 4</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave4Enabled--"><code>getSlave4Enabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave4Enabled--"><code>getSlave4Enabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV4_CTRL"><code>MPU6050_RA_I2C_SLV4_CTRL</code></a></dd>
 </dl>
 </li>
@@ -8382,7 +8382,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New enabled value for Slave 4 transaction interrupts.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave4InterruptEnabled--"><code>getSlave4InterruptEnabled()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave4InterruptEnabled--"><code>getSlave4InterruptEnabled()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV4_CTRL"><code>MPU6050_RA_I2C_SLV4_CTRL</code></a></dd>
 </dl>
 </li>
@@ -8419,7 +8419,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>mode</code> - New write mode for Slave 4 (0 = register address + data, 1 = data only)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave4WriteMode--"><code>getSlave4WriteMode()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave4WriteMode--"><code>getSlave4WriteMode()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV4_CTRL"><code>MPU6050_RA_I2C_SLV4_CTRL</code></a></dd>
 </dl>
 </li>
@@ -8462,7 +8462,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>delay</code> - New Slave 4 master delay value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave4MasterDelay--"><code>getSlave4MasterDelay()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSlave4MasterDelay--"><code>getSlave4MasterDelay()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_SLV4_CTRL"><code>MPU6050_RA_I2C_SLV4_CTRL</code></a></dd>
 </dl>
 </li>
@@ -8653,7 +8653,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt mode (0=active-high, 1=active-low)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_INT_LEVEL_BIT"><code>MPU6050_INTCFG_INT_LEVEL_BIT</code></a></dd>
 </dl>
 </li>
@@ -8670,8 +8670,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>mode</code> - New interrupt mode (0=active-high, 1=active-low)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getInterruptMode--"><code>getInterruptMode()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getInterruptMode--"><code>getInterruptMode()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_INT_LEVEL_BIT"><code>MPU6050_INTCFG_INT_LEVEL_BIT</code></a></dd>
 </dl>
 </li>
@@ -8689,7 +8689,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt drive mode (0=push-pull, 1=open-drain)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_INT_OPEN_BIT"><code>MPU6050_INTCFG_INT_OPEN_BIT</code></a></dd>
 </dl>
 </li>
@@ -8706,8 +8706,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>drive</code> - New interrupt drive mode (0=push-pull, 1=open-drain)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getInterruptDrive--"><code>getInterruptDrive()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getInterruptDrive--"><code>getInterruptDrive()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_INT_OPEN_BIT"><code>MPU6050_INTCFG_INT_OPEN_BIT</code></a></dd>
 </dl>
 </li>
@@ -8725,7 +8725,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current latch mode (0=50us-pulse, 1=latch-until-int-cleared)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_LATCH_INT_EN_BIT"><code>MPU6050_INTCFG_LATCH_INT_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -8742,8 +8742,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>latch</code> - New latch mode (0=50us-pulse, 1=latch-until-int-cleared)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getInterruptLatch--"><code>getInterruptLatch()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getInterruptLatch--"><code>getInterruptLatch()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_LATCH_INT_EN_BIT"><code>MPU6050_INTCFG_LATCH_INT_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -8761,7 +8761,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current latch clear mode (0=status-read-only, 1=any-register-read)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_INT_RD_CLEAR_BIT"><code>MPU6050_INTCFG_INT_RD_CLEAR_BIT</code></a></dd>
 </dl>
 </li>
@@ -8778,8 +8778,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>clear</code> - New latch clear mode (0=status-read-only, 1=any-register-read)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getInterruptLatchClear--"><code>getInterruptLatchClear()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getInterruptLatchClear--"><code>getInterruptLatchClear()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_INT_RD_CLEAR_BIT"><code>MPU6050_INTCFG_INT_RD_CLEAR_BIT</code></a></dd>
 </dl>
 </li>
@@ -8796,7 +8796,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current FSYNC interrupt mode (0=active-high, 1=active-low)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_FSYNC_INT_LEVEL_BIT"><code>MPU6050_INTCFG_FSYNC_INT_LEVEL_BIT</code></a></dd>
 </dl>
 </li>
@@ -8813,7 +8813,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>level</code> - New FSYNC interrupt mode (0=active-high, 1=active-low)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_FSYNC_INT_LEVEL_BIT"><code>MPU6050_INTCFG_FSYNC_INT_LEVEL_BIT</code></a></dd>
 </dl>
 </li>
@@ -8831,7 +8831,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt enabled setting</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_FSYNC_INT_EN_BIT"><code>MPU6050_INTCFG_FSYNC_INT_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -8848,8 +8848,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New FSYNC pin interrupt enabled setting</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFSyncInterruptEnabled--"><code>getFSyncInterruptEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFSyncInterruptEnabled--"><code>getFSyncInterruptEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_FSYNC_INT_EN_BIT"><code>MPU6050_INTCFG_FSYNC_INT_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -8872,7 +8872,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current I2C bypass enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_I2C_BYPASS_EN_BIT"><code>MPU6050_INTCFG_I2C_BYPASS_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -8895,7 +8895,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New I2C bypass enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_I2C_BYPASS_EN_BIT"><code>MPU6050_INTCFG_I2C_BYPASS_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -8916,7 +8916,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current reference clock output enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_CLKOUT_EN_BIT"><code>MPU6050_INTCFG_CLKOUT_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -8937,7 +8937,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New reference clock output enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTCFG_CLKOUT_EN_BIT"><code>MPU6050_INTCFG_CLKOUT_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -8956,7 +8956,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_FF_BIT"><code>MPU6050_INTERRUPT_FF_BIT</code></a></dd>
 </dl>
 </li>
@@ -8975,8 +8975,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntFreefallEnabled--"><code>getIntFreefallEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntFreefallEnabled--"><code>getIntFreefallEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_FF_BIT"><code>MPU6050_INTERRUPT_FF_BIT</code></a></dd>
 </dl>
 </li>
@@ -8994,7 +8994,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_FF_BIT"><code>MPU6050_INTERRUPT_FF_BIT</code></a></dd>
 </dl>
 </li>
@@ -9011,8 +9011,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntFreefallEnabled--"><code>getIntFreefallEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntFreefallEnabled--"><code>getIntFreefallEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_FF_BIT"><code>MPU6050_INTERRUPT_FF_BIT</code></a></dd>
 </dl>
 </li>
@@ -9030,7 +9030,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_MOT_BIT"><code>MPU6050_INTERRUPT_MOT_BIT</code></a></dd>
 </dl>
 </li>
@@ -9047,8 +9047,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntMotionEnabled--"><code>getIntMotionEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntMotionEnabled--"><code>getIntMotionEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_MOT_BIT"><code>MPU6050_INTERRUPT_MOT_BIT</code></a></dd>
 </dl>
 </li>
@@ -9066,7 +9066,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_ZMOT_BIT"><code>MPU6050_INTERRUPT_ZMOT_BIT</code></a></dd>
 </dl>
 </li>
@@ -9083,8 +9083,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntZeroMotionEnabled--"><code>getIntZeroMotionEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntZeroMotionEnabled--"><code>getIntZeroMotionEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_ZMOT_BIT"><code>MPU6050_INTERRUPT_ZMOT_BIT</code></a></dd>
 </dl>
 </li>
@@ -9102,7 +9102,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_FIFO_OFLOW_BIT"><code>MPU6050_INTERRUPT_FIFO_OFLOW_BIT</code></a></dd>
 </dl>
 </li>
@@ -9119,8 +9119,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntFIFOBufferOverflowEnabled--"><code>getIntFIFOBufferOverflowEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntFIFOBufferOverflowEnabled--"><code>getIntFIFOBufferOverflowEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_FIFO_OFLOW_BIT"><code>MPU6050_INTERRUPT_FIFO_OFLOW_BIT</code></a></dd>
 </dl>
 </li>
@@ -9139,7 +9139,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_I2C_MST_INT_BIT"><code>MPU6050_INTERRUPT_I2C_MST_INT_BIT</code></a></dd>
 </dl>
 </li>
@@ -9156,8 +9156,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntI2CMasterEnabled--"><code>getIntI2CMasterEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntI2CMasterEnabled--"><code>getIntI2CMasterEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_I2C_MST_INT_BIT"><code>MPU6050_INTERRUPT_I2C_MST_INT_BIT</code></a></dd>
 </dl>
 </li>
@@ -9176,7 +9176,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_ENABLE"><code>MPU6050_RA_INT_ENABLE</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_DATA_RDY_BIT"><code>MPU6050_INTERRUPT_DATA_RDY_BIT</code></a></dd>
 </dl>
 </li>
@@ -9193,8 +9193,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New interrupt enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntDataReadyEnabled--"><code>getIntDataReadyEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getIntDataReadyEnabled--"><code>getIntDataReadyEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_PIN_CFG"><code>MPU6050_RA_INT_PIN_CFG</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_DATA_RDY_BIT"><code>MPU6050_INTERRUPT_DATA_RDY_BIT</code></a></dd>
 </dl>
 </li>
@@ -9232,7 +9232,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_STATUS"><code>MPU6050_RA_INT_STATUS</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_STATUS"><code>MPU6050_RA_INT_STATUS</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_FF_BIT"><code>MPU6050_INTERRUPT_FF_BIT</code></a></dd>
 </dl>
 </li>
@@ -9251,7 +9251,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_STATUS"><code>MPU6050_RA_INT_STATUS</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_STATUS"><code>MPU6050_RA_INT_STATUS</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_MOT_BIT"><code>MPU6050_INTERRUPT_MOT_BIT</code></a></dd>
 </dl>
 </li>
@@ -9270,7 +9270,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_STATUS"><code>MPU6050_RA_INT_STATUS</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_STATUS"><code>MPU6050_RA_INT_STATUS</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_ZMOT_BIT"><code>MPU6050_INTERRUPT_ZMOT_BIT</code></a></dd>
 </dl>
 </li>
@@ -9289,7 +9289,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_STATUS"><code>MPU6050_RA_INT_STATUS</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_STATUS"><code>MPU6050_RA_INT_STATUS</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_FIFO_OFLOW_BIT"><code>MPU6050_INTERRUPT_FIFO_OFLOW_BIT</code></a></dd>
 </dl>
 </li>
@@ -9309,7 +9309,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_STATUS"><code>MPU6050_RA_INT_STATUS</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_STATUS"><code>MPU6050_RA_INT_STATUS</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_I2C_MST_INT_BIT"><code>MPU6050_INTERRUPT_I2C_MST_INT_BIT</code></a></dd>
 </dl>
 </li>
@@ -9328,7 +9328,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current interrupt status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_STATUS"><code>MPU6050_RA_INT_STATUS</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_INT_STATUS"><code>MPU6050_RA_INT_STATUS</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_INTERRUPT_DATA_RDY_BIT"><code>MPU6050_INTERRUPT_DATA_RDY_BIT</code></a></dd>
 </dl>
 </li>
@@ -9351,9 +9351,9 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
  value</li><li>6 - magnetometer X-axis value</li><li>7 - magnetometer Y-axis
  value</li><li>8 - magnetometer Z-axis value</li></ul></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getAcceleration--"><code>getAcceleration()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getRotation--"><code>getRotation()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getAcceleration--"><code>getAcceleration()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getRotation--"><code>getRotation()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_ACCEL_XOUT_H"><code>MPU6050_RA_ACCEL_XOUT_H</code></a></dd>
 </dl>
 </li>
@@ -9375,8 +9375,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
  X-axis value</li><li>4 - gyroscope Y-axis value</li><li>5 - gyroscope Z-axis
  value</li></ul></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getAcceleration--"><code>getAcceleration()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getRotation--"><code>getRotation()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getAcceleration--"><code>getAcceleration()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getRotation--"><code>getRotation()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_ACCEL_XOUT_H"><code>MPU6050_RA_ACCEL_XOUT_H</code></a></dd>
 </dl>
 </li>
@@ -9440,7 +9440,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>X-axis acceleration measurement in 16-bit 2's complement format</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_ACCEL_XOUT_H"><code>MPU6050_RA_ACCEL_XOUT_H</code></a></dd>
 </dl>
 </li>
@@ -9457,7 +9457,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Y-axis acceleration measurement in 16-bit 2's complement format</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_ACCEL_YOUT_H"><code>MPU6050_RA_ACCEL_YOUT_H</code></a></dd>
 </dl>
 </li>
@@ -9474,7 +9474,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Z-axis acceleration measurement in 16-bit 2's complement format</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_ACCEL_ZOUT_H"><code>MPU6050_RA_ACCEL_ZOUT_H</code></a></dd>
 </dl>
 </li>
@@ -9531,7 +9531,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>an array of shorts containing x, y, and z rotation values.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_GYRO_XOUT_H"><code>MPU6050_RA_GYRO_XOUT_H</code></a></dd>
 </dl>
 </li>
@@ -9548,7 +9548,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>X-axis rotation measurement in 16-bit 2's complement format</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_GYRO_XOUT_H"><code>MPU6050_RA_GYRO_XOUT_H</code></a></dd>
 </dl>
 </li>
@@ -9565,7 +9565,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Y-axis rotation measurement in 16-bit 2's complement format</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_GYRO_YOUT_H"><code>MPU6050_RA_GYRO_YOUT_H</code></a></dd>
 </dl>
 </li>
@@ -9582,7 +9582,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Z-axis rotation measurement in 16-bit 2's complement format</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotion6--"><code>getMotion6()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_GYRO_ZOUT_H"><code>MPU6050_RA_GYRO_ZOUT_H</code></a></dd>
 </dl>
 </li>
@@ -9720,7 +9720,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Motion detection status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_MOTION_MOT_XNEG_BIT"><code>MPU6050_MOTION_MOT_XNEG_BIT</code></a></dd>
 </dl>
 </li>
@@ -9737,7 +9737,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Motion detection status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_MOTION_MOT_XPOS_BIT"><code>MPU6050_MOTION_MOT_XPOS_BIT</code></a></dd>
 </dl>
 </li>
@@ -9754,7 +9754,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Motion detection status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_MOTION_MOT_YNEG_BIT"><code>MPU6050_MOTION_MOT_YNEG_BIT</code></a></dd>
 </dl>
 </li>
@@ -9771,7 +9771,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Motion detection status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_MOTION_MOT_YPOS_BIT"><code>MPU6050_MOTION_MOT_YPOS_BIT</code></a></dd>
 </dl>
 </li>
@@ -9788,7 +9788,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Motion detection status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_MOTION_MOT_ZNEG_BIT"><code>MPU6050_MOTION_MOT_ZNEG_BIT</code></a></dd>
 </dl>
 </li>
@@ -9805,7 +9805,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Motion detection status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_MOTION_MOT_ZPOS_BIT"><code>MPU6050_MOTION_MOT_ZPOS_BIT</code></a></dd>
 </dl>
 </li>
@@ -9822,7 +9822,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Motion detection status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_STATUS"><code>MPU6050_RA_MOT_DETECT_STATUS</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_MOTION_MOT_ZRMOT_BIT"><code>MPU6050_MOTION_MOT_ZRMOT_BIT</code></a></dd>
 </dl>
 </li>
@@ -9863,7 +9863,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current external data shadow delay enabled status.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_MST_DELAY_CTRL"><code>MPU6050_RA_I2C_MST_DELAY_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_MST_DELAY_CTRL"><code>MPU6050_RA_I2C_MST_DELAY_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_DELAYCTRL_DELAY_ES_SHADOW_BIT"><code>MPU6050_DELAYCTRL_DELAY_ES_SHADOW_BIT</code></a></dd>
 </dl>
 </li>
@@ -9880,8 +9880,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New external data shadow delay enabled status.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getExternalShadowDelayEnabled--"><code>getExternalShadowDelayEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_MST_DELAY_CTRL"><code>MPU6050_RA_I2C_MST_DELAY_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getExternalShadowDelayEnabled--"><code>getExternalShadowDelayEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_MST_DELAY_CTRL"><code>MPU6050_RA_I2C_MST_DELAY_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_DELAYCTRL_DELAY_ES_SHADOW_BIT"><code>MPU6050_DELAYCTRL_DELAY_ES_SHADOW_BIT</code></a></dd>
 </dl>
 </li>
@@ -9911,7 +9911,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current slave delay enabled status.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_MST_DELAY_CTRL"><code>MPU6050_RA_I2C_MST_DELAY_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_MST_DELAY_CTRL"><code>MPU6050_RA_I2C_MST_DELAY_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_DELAYCTRL_I2C_SLV0_DLY_EN_BIT"><code>MPU6050_DELAYCTRL_I2C_SLV0_DLY_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -9930,7 +9930,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dd><code>num</code> - Slave number (0-4)</dd>
 <dd><code>enabled</code> - New slave delay enabled status.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_MST_DELAY_CTRL"><code>MPU6050_RA_I2C_MST_DELAY_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_I2C_MST_DELAY_CTRL"><code>MPU6050_RA_I2C_MST_DELAY_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_DELAYCTRL_I2C_SLV0_DLY_EN_BIT"><code>MPU6050_DELAYCTRL_I2C_SLV0_DLY_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -9947,7 +9947,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
  filters to their power up configurations.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_SIGNAL_PATH_RESET"><code>MPU6050_RA_SIGNAL_PATH_RESET</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_SIGNAL_PATH_RESET"><code>MPU6050_RA_SIGNAL_PATH_RESET</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PATHRESET_GYRO_RESET_BIT"><code>MPU6050_PATHRESET_GYRO_RESET_BIT</code></a></dd>
 </dl>
 </li>
@@ -9964,7 +9964,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
  filters to their power up configurations.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_SIGNAL_PATH_RESET"><code>MPU6050_RA_SIGNAL_PATH_RESET</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_SIGNAL_PATH_RESET"><code>MPU6050_RA_SIGNAL_PATH_RESET</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PATHRESET_ACCEL_RESET_BIT"><code>MPU6050_PATHRESET_ACCEL_RESET_BIT</code></a></dd>
 </dl>
 </li>
@@ -9981,7 +9981,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
  filters to their power up configurations.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_SIGNAL_PATH_RESET"><code>MPU6050_RA_SIGNAL_PATH_RESET</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_SIGNAL_PATH_RESET"><code>MPU6050_RA_SIGNAL_PATH_RESET</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PATHRESET_TEMP_RESET_BIT"><code>MPU6050_PATHRESET_TEMP_RESET_BIT</code></a></dd>
 </dl>
 </li>
@@ -10007,7 +10007,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current accelerometer power-on delay</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_CTRL"><code>MPU6050_RA_MOT_DETECT_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_CTRL"><code>MPU6050_RA_MOT_DETECT_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_DETECT_ACCEL_ON_DELAY_BIT"><code>MPU6050_DETECT_ACCEL_ON_DELAY_BIT</code></a></dd>
 </dl>
 </li>
@@ -10024,8 +10024,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>delay</code> - New accelerometer power-on delay (0-3)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getAccelerometerPowerOnDelay--"><code>getAccelerometerPowerOnDelay()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_CTRL"><code>MPU6050_RA_MOT_DETECT_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getAccelerometerPowerOnDelay--"><code>getAccelerometerPowerOnDelay()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_CTRL"><code>MPU6050_RA_MOT_DETECT_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_DETECT_ACCEL_ON_DELAY_BIT"><code>MPU6050_DETECT_ACCEL_ON_DELAY_BIT</code></a></dd>
 </dl>
 </li>
@@ -10062,7 +10062,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current decrement configuration</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_CTRL"><code>MPU6050_RA_MOT_DETECT_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_CTRL"><code>MPU6050_RA_MOT_DETECT_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_DETECT_FF_COUNT_BIT"><code>MPU6050_DETECT_FF_COUNT_BIT</code></a></dd>
 </dl>
 </li>
@@ -10079,8 +10079,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>decrement</code> - New decrement configuration value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFreefallDetectionCounterDecrement--"><code>getFreefallDetectionCounterDecrement()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_CTRL"><code>MPU6050_RA_MOT_DETECT_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFreefallDetectionCounterDecrement--"><code>getFreefallDetectionCounterDecrement()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_CTRL"><code>MPU6050_RA_MOT_DETECT_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_DETECT_FF_COUNT_BIT"><code>MPU6050_DETECT_FF_COUNT_BIT</code></a></dd>
 </dl>
 </li>
@@ -10127,8 +10127,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>decrement</code> - New decrement configuration value</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotionDetectionCounterDecrement--"><code>getMotionDetectionCounterDecrement()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_CTRL"><code>MPU6050_RA_MOT_DETECT_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getMotionDetectionCounterDecrement--"><code>getMotionDetectionCounterDecrement()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_MOT_DETECT_CTRL"><code>MPU6050_RA_MOT_DETECT_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_DETECT_MOT_COUNT_BIT"><code>MPU6050_DETECT_MOT_COUNT_BIT</code></a></dd>
 </dl>
 </li>
@@ -10148,7 +10148,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current FIFO enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_USERCTRL_FIFO_EN_BIT"><code>MPU6050_USERCTRL_FIFO_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -10165,8 +10165,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New FIFO enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFIFOEnabled--"><code>getFIFOEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFIFOEnabled--"><code>getFIFOEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_USERCTRL_FIFO_EN_BIT"><code>MPU6050_USERCTRL_FIFO_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -10189,7 +10189,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current I2C Master Mode enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_USERCTRL_I2C_MST_EN_BIT"><code>MPU6050_USERCTRL_I2C_MST_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -10206,8 +10206,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New I2C Master Mode enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getI2CMasterModeEnabled--"><code>getI2CMasterModeEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getI2CMasterModeEnabled--"><code>getI2CMasterModeEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_USERCTRL_I2C_MST_EN_BIT"><code>MPU6050_USERCTRL_I2C_MST_EN_BIT</code></a></dd>
 </dl>
 </li>
@@ -10236,7 +10236,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
  bit automatically clears to 0 after the reset has been triggered.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_USERCTRL_FIFO_RESET_BIT"><code>MPU6050_USERCTRL_FIFO_RESET_BIT</code></a></dd>
 </dl>
 </li>
@@ -10253,7 +10253,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
  This bit automatically clears to 0 after the reset has been triggered.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_USERCTRL_I2C_MST_RESET_BIT"><code>MPU6050_USERCTRL_I2C_MST_RESET_BIT</code></a></dd>
 </dl>
 </li>
@@ -10275,7 +10275,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
  use Register 104, SIGNAL_PATH_RESET.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_USER_CTRL"><code>MPU6050_RA_USER_CTRL</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_USERCTRL_SIG_COND_RESET_BIT"><code>MPU6050_USERCTRL_SIG_COND_RESET_BIT</code></a></dd>
 </dl>
 </li>
@@ -10291,7 +10291,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
  A small delay of ~50ms may be desirable after triggering a reset.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR1_DEVICE_RESET_BIT"><code>MPU6050_PWR1_DEVICE_RESET_BIT</code></a></dd>
 </dl>
 </li>
@@ -10314,7 +10314,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current sleep mode enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR1_SLEEP_BIT"><code>MPU6050_PWR1_SLEEP_BIT</code></a></dd>
 </dl>
 </li>
@@ -10331,8 +10331,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New sleep mode enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSleepEnabled--"><code>getSleepEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getSleepEnabled--"><code>getSleepEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR1_SLEEP_BIT"><code>MPU6050_PWR1_SLEEP_BIT</code></a></dd>
 </dl>
 </li>
@@ -10352,7 +10352,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current sleep mode enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR1_CYCLE_BIT"><code>MPU6050_PWR1_CYCLE_BIT</code></a></dd>
 </dl>
 </li>
@@ -10369,8 +10369,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New sleep mode enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getWakeCycleEnabled--"><code>getWakeCycleEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getWakeCycleEnabled--"><code>getWakeCycleEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR1_CYCLE_BIT"><code>MPU6050_PWR1_CYCLE_BIT</code></a></dd>
 </dl>
 </li>
@@ -10392,7 +10392,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current temperature sensor enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR1_TEMP_DIS_BIT"><code>MPU6050_PWR1_TEMP_DIS_BIT</code></a></dd>
 </dl>
 </li>
@@ -10412,8 +10412,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New temperature sensor enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getTempSensorEnabled--"><code>getTempSensorEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getTempSensorEnabled--"><code>getTempSensorEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_1"><code>MPU6050_RA_PWR_MGMT_1</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR1_TEMP_DIS_BIT"><code>MPU6050_PWR1_TEMP_DIS_BIT</code></a></dd>
 </dl>
 </li>
@@ -10430,8 +10430,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current clock source setting</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.GyroClockSource.html" title="enum in io.github.robolib.module.sensor.mpu6050"><code>MPU6050.GyroClockSource</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR1_CLKSEL_BIT"><code>MPU6050_PWR1_CLKSEL_BIT</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.GyroClockSource.html" title="enum in io.github.robolib.module.sensor.mpu6050"><code>MPU6050.GyroClockSource</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR1_CLKSEL_BIT"><code>MPU6050_PWR1_CLKSEL_BIT</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR1_CLKSEL_LENGTH"><code>MPU6050_PWR1_CLKSEL_LENGTH</code></a></dd>
 </dl>
 </li>
@@ -10457,9 +10457,9 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>source</code> - New clock source setting</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getClockSource--"><code>getClockSource()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.GyroClockSource.html" title="enum in io.github.robolib.module.sensor.mpu6050"><code>MPU6050.GyroClockSource</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR1_CLKSEL_BIT"><code>MPU6050_PWR1_CLKSEL_BIT</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getClockSource--"><code>getClockSource()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.GyroClockSource.html" title="enum in io.github.robolib.module.sensor.mpu6050"><code>MPU6050.GyroClockSource</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR1_CLKSEL_BIT"><code>MPU6050_PWR1_CLKSEL_BIT</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR1_CLKSEL_LENGTH"><code>MPU6050_PWR1_CLKSEL_LENGTH</code></a></dd>
 </dl>
 </li>
@@ -10527,7 +10527,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current X-axis standby enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR2_STBY_XA_BIT"><code>MPU6050_PWR2_STBY_XA_BIT</code></a></dd>
 </dl>
 </li>
@@ -10544,8 +10544,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New X-axis standby enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getStandbyXAccelEnabled--"><code>getStandbyXAccelEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getStandbyXAccelEnabled--"><code>getStandbyXAccelEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR2_STBY_XA_BIT"><code>MPU6050_PWR2_STBY_XA_BIT</code></a></dd>
 </dl>
 </li>
@@ -10563,7 +10563,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current Y-axis standby enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR2_STBY_YA_BIT"><code>MPU6050_PWR2_STBY_YA_BIT</code></a></dd>
 </dl>
 </li>
@@ -10580,8 +10580,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New Y-axis standby enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getStandbyYAccelEnabled--"><code>getStandbyYAccelEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getStandbyYAccelEnabled--"><code>getStandbyYAccelEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR2_STBY_YA_BIT"><code>MPU6050_PWR2_STBY_YA_BIT</code></a></dd>
 </dl>
 </li>
@@ -10599,7 +10599,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current Z-axis standby enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR2_STBY_ZA_BIT"><code>MPU6050_PWR2_STBY_ZA_BIT</code></a></dd>
 </dl>
 </li>
@@ -10616,8 +10616,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New Z-axis standby enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getStandbyZAccelEnabled--"><code>getStandbyZAccelEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getStandbyZAccelEnabled--"><code>getStandbyZAccelEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR2_STBY_ZA_BIT"><code>MPU6050_PWR2_STBY_ZA_BIT</code></a></dd>
 </dl>
 </li>
@@ -10630,13 +10630,13 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <h4>getStandbyXGyroEnabled</h4>
 <pre>public&nbsp;boolean&nbsp;getStandbyXGyroEnabled()</pre>
 <div class="block">Get X-axis gyroscope standby enabled status.
- 
+
  If enabled, the X-axis will not gather or report data (or use power).</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current X-axis standby enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR2_STBY_XG_BIT"><code>MPU6050_PWR2_STBY_XG_BIT</code></a></dd>
 </dl>
 </li>
@@ -10653,8 +10653,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New X-axis standby enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getStandbyXGyroEnabled--"><code>getStandbyXGyroEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getStandbyXGyroEnabled--"><code>getStandbyXGyroEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR2_STBY_XG_BIT"><code>MPU6050_PWR2_STBY_XG_BIT</code></a></dd>
 </dl>
 </li>
@@ -10667,13 +10667,13 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <h4>getStandbyYGyroEnabled</h4>
 <pre>public&nbsp;boolean&nbsp;getStandbyYGyroEnabled()</pre>
 <div class="block">Get Y-axis gyroscope standby enabled status.
- 
+
  If enabled, the Y-axis will not gather or report data (or use power).</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current Y-axis standby enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR2_STBY_YG_BIT"><code>MPU6050_PWR2_STBY_YG_BIT</code></a></dd>
 </dl>
 </li>
@@ -10690,8 +10690,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New Y-axis standby enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getStandbyYGyroEnabled--"><code>getStandbyYGyroEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getStandbyYGyroEnabled--"><code>getStandbyYGyroEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR2_STBY_YG_BIT"><code>MPU6050_PWR2_STBY_YG_BIT</code></a></dd>
 </dl>
 </li>
@@ -10704,13 +10704,13 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <h4>getStandbyZGyroEnabled</h4>
 <pre>public&nbsp;boolean&nbsp;getStandbyZGyroEnabled()</pre>
 <div class="block">Get Z-axis gyroscope standby enabled status.
- 
+
  If enabled, the Z-axis will not gather or report data (or use power).</div>
 <dl>
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Current Z-axis standby enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR2_STBY_ZG_BIT"><code>MPU6050_PWR2_STBY_ZG_BIT</code></a></dd>
 </dl>
 </li>
@@ -10727,8 +10727,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>enabled</code> - New Z-axis standby enabled status</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getStandbyZGyroEnabled--"><code>getStandbyZGyroEnabled()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getStandbyZGyroEnabled--"><code>getStandbyZGyroEnabled()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_PWR_MGMT_2"><code>MPU6050_RA_PWR_MGMT_2</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_PWR2_STBY_ZG_BIT"><code>MPU6050_PWR2_STBY_ZG_BIT</code></a></dd>
 </dl>
 </li>
@@ -10741,7 +10741,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <h4>getFIFOCount</h4>
 <pre>public&nbsp;short&nbsp;getFIFOCount()</pre>
 <div class="block">Get current FIFO buffer size.
- 
+
  This value indicates the number of bytes stored in the FIFO buffer. This
  number is in turn the number of bytes that can be read from the FIFO buffer
  and it is directly proportional to the number of samples available given the
@@ -10807,7 +10807,7 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <div class="block">Write byte to FIFO buffer.</div>
 <dl>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFIFOByte--"><code>getFIFOByte()</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getFIFOByte--"><code>getFIFOByte()</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_FIFO_R_W"><code>MPU6050_RA_FIFO_R_W</code></a></dd>
 </dl>
 </li>
@@ -10825,8 +10825,8 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="returnLabel">Returns:</span></dt>
 <dd>Device ID (6 bits only! should be 0x34)</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_WHO_AM_I"><code>MPU6050_RA_WHO_AM_I</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_WHO_AM_I_BIT"><code>MPU6050_WHO_AM_I_BIT</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_WHO_AM_I"><code>MPU6050_RA_WHO_AM_I</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_WHO_AM_I_BIT"><code>MPU6050_WHO_AM_I_BIT</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_WHO_AM_I_LENGTH"><code>MPU6050_WHO_AM_I_LENGTH</code></a></dd>
 </dl>
 </li>
@@ -10845,9 +10845,9 @@ implements <a href="../../../../../../io/github/robolib/module/sensor/IAccelerom
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>id</code> - New device ID to set.</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getDeviceID--"><code>getDeviceID()</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_WHO_AM_I"><code>MPU6050_RA_WHO_AM_I</code></a>, 
-<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_WHO_AM_I_BIT"><code>MPU6050_WHO_AM_I_BIT</code></a>, 
+<dd><a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#getDeviceID--"><code>getDeviceID()</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_RA_WHO_AM_I"><code>MPU6050_RA_WHO_AM_I</code></a>,
+<a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_WHO_AM_I_BIT"><code>MPU6050_WHO_AM_I_BIT</code></a>,
 <a href="../../../../../../io/github/robolib/module/sensor/mpu6050/MPU6050.html#MPU6050_WHO_AM_I_LENGTH"><code>MPU6050_WHO_AM_I_LENGTH</code></a></dd>
 </dl>
 </li>

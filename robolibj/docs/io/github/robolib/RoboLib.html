@@ -114,19 +114,19 @@ extends java.lang.Object</pre>
 <div class="block">This Class handles switching of Game Modes better than the default
  IterativeRobot. It has a more complex program flow, however it runs faster
  and uses less memory.
- 
+
  You must make your own class and have it extend this class to use it.
- The constructor must call the Super class with either no arguments, 
+ The constructor must call the Super class with either no arguments,
  or two strings representing the Name of the robot and the version of
  the code.
- 
+
  Handles the Switching of the Game mode and the Execution of the mode.
  This controls what GameMode the robot should run.</div>
 <dl>
 <dt><span class="simpleTagLabel">Since:</span></dt>
 <dd>0.1.0</dd>
 <dt><span class="simpleTagLabel">Author:</span></dt>
-<dd>noriah Reuland <vix@noriah.dev></dd>
+<dd>noriah <vix@noriah.dev></dd>
 </dl>
 </li>
 </ul>
@@ -841,7 +841,7 @@ extends java.lang.Object</pre>
 <h4>robotInit</h4>
 <pre>public&nbsp;void&nbsp;robotInit()</pre>
 <div class="block">User Initialization code.
- 
+
  This is run before the robot runs through its modes.</div>
 </li>
 </ul>
@@ -853,22 +853,22 @@ extends java.lang.Object</pre>
 <h4>main</h4>
 <pre>public static final&nbsp;void&nbsp;main(java.lang.String[]&nbsp;args)</pre>
 <div class="block">The Main method for the robot.
- 
+
  Starting point for the applications. Starts the OtaServer and then runs
  the robot.
- 
+
  This is called to start the robot. It should never exit.
  If it does exit, it will first throw several exceptions to kill the robot.
  We don't want an out of control robot.
- 
+
  Initializes the Game Mode Switcher.
  This method must be called when ready to start the robot.
- 
+
  Checks each Mode to see if there is code to run, if not, a Default class
  will be added.
- 
+
  Main task for the Game Manager
- 
+
  <p>This method does three main things.</p>
  <p>Checks to see whether we need to switch RobotMode or not</p>
  <p>If needed, switch the current game mode. This will first call the end()
@@ -876,15 +876,15 @@ extends java.lang.Object</pre>
  call the System Garbace Collector, and then call the new RobotMode init() method.</p>
  <p>Finally, Runs the Current RobotMode. Catches any Throwable objects that may be thrown.
  Any caught Throwable Object is treated as fatal and will kill the RoboLibBot.
- They are treated as fatal because any uncaught Throwables can only be 
+ They are treated as fatal because any uncaught Throwables can only be
  RuntimeExceptions or Errors, which are Fatal</p></div>
 <dl>
 <dt><span class="paramLabel">Parameters:</span></dt>
 <dd><code>args</code> - the arguments</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../io/github/robolib/robot/DisabledMode.html" title="class in io.github.robolib.robot"><code>DisabledMode</code></a>, 
-<a href="../../../io/github/robolib/robot/TestMode.html" title="class in io.github.robolib.robot"><code>TestMode</code></a>, 
-<a href="../../../io/github/robolib/robot/AutonMode.html" title="class in io.github.robolib.robot"><code>AutonMode</code></a>, 
+<dd><a href="../../../io/github/robolib/robot/DisabledMode.html" title="class in io.github.robolib.robot"><code>DisabledMode</code></a>,
+<a href="../../../io/github/robolib/robot/TestMode.html" title="class in io.github.robolib.robot"><code>TestMode</code></a>,
+<a href="../../../io/github/robolib/robot/AutonMode.html" title="class in io.github.robolib.robot"><code>AutonMode</code></a>,
 <a href="../../../io/github/robolib/robot/TeleopMode.html" title="class in io.github.robolib.robot"><code>TeleopMode</code></a></dd>
 </dl>
 </li>
@@ -952,7 +952,7 @@ extends java.lang.Object</pre>
 <dd><code>gMode</code> - the <a href="../../../io/github/robolib/robot/GameMode.html" title="enum in io.github.robolib.robot"><code>GameMode</code></a> that this RobotMode will be run at</dd>
 <dd><code>rMode</code> - the <a href="../../../io/github/robolib/RobotMode.html" title="class in io.github.robolib"><code>RobotMode</code></a> to add</dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../io/github/robolib/robot/GameMode.html" title="enum in io.github.robolib.robot"><code>GameMode</code></a>, 
+<dd><a href="../../../io/github/robolib/robot/GameMode.html" title="enum in io.github.robolib.robot"><code>GameMode</code></a>,
 <a href="../../../io/github/robolib/RobotMode.html" title="class in io.github.robolib"><code>RobotMode</code></a></dd>
 </dl>
 </li>
@@ -965,7 +965,7 @@ extends java.lang.Object</pre>
 <h4>getCurrentRobotMode</h4>
 <pre>public static final&nbsp;<a href="../../../io/github/robolib/RobotMode.html" title="class in io.github.robolib">RobotMode</a>&nbsp;getCurrentRobotMode()</pre>
 <div class="block">Gets the current <a href="../../../io/github/robolib/RobotMode.html" title="class in io.github.robolib"><code>RobotMode</code></a>.
- 
+
  If there is no current Mode, then something went wrong,
  and an error mode is returned that will cause the robot to quit.</div>
 <dl>

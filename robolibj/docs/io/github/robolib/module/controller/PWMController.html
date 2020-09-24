@@ -132,7 +132,7 @@ extends <a href="../../../../../io/github/robolib/module/iface/PWM.html" title="
 implements <a href="../../../../../io/github/robolib/module/controller/ControllerModule.html" title="interface in io.github.robolib.module.controller">ControllerModule</a>, <a href="../../../../../io/github/robolib/module/actuator/ActuatorModule.html" title="interface in io.github.robolib.module.actuator">ActuatorModule</a>, <a href="../../../../../io/github/robolib/module/controller/SpeedController.html" title="interface in io.github.robolib.module.controller">SpeedController</a>, <a href="../../../../../io/github/robolib/module/MotorSafety.html" title="interface in io.github.robolib.module">MotorSafety</a></pre>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
-<dd>noriah Reuland <vix@noriah.dev></dd>
+<dd>noriah <vix@noriah.dev></dd>
 </dl>
 </li>
 </ul>
@@ -607,15 +607,15 @@ implements <a href="../../../../../io/github/robolib/module/controller/Controlle
 <h4>makeSafe</h4>
 <pre>public&nbsp;void&nbsp;makeSafe()</pre>
 <div class="block">Make this actuator safe.
-  
+
  This should disable the module and keep it disabled.
  There should be no way to recover from a "safe" state.
- 
+
  This is here to allow for exceptions in function, to keep
  the code resetting (switching game mode) from affecting
  the state, in case an external sensor detects that the module
  will cause damage to itself or others (or even people)
- 
+
  To recover from this state, the code should need to be restarted.</div>
 <dl>
 <dt><span class="overrideSpecifyLabel">Specified by:</span></dt>

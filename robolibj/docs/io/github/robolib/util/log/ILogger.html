@@ -116,11 +116,11 @@ var activeTableTab = "activeTableTab";
 <pre>public abstract class <span class="typeNameLabel">ILogger</span>
 extends java.lang.Object</pre>
 <div class="block">A Logging class.
- 
+
  <p>Each Class that wishes to log must call the <code>Logger.get</code> method with itself
  as the only argument, or with an optional string value. This will return a new Logger
  object.</p>
- 
+
  <p>To log something, the Calling class must call the desired level method
  <code>info, debug, warn, error, fatal</code> with the message to be logged. If the
  calling the err or fatal classes, a Throwable object must be passed as a second
@@ -129,9 +129,9 @@ extends java.lang.Object</pre>
  stack trace, and kill the program.</p></div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
-<dd>noriah Reuland <vix@noriah.dev></dd>
+<dd>noriah <vix@noriah.dev></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../io/github/robolib/util/log/Logger.html" title="class in io.github.robolib.util.log"><code>Logger</code></a>, 
+<dd><a href="../../../../../io/github/robolib/util/log/Logger.html" title="class in io.github.robolib.util.log"><code>Logger</code></a>,
 <a href="../../../../../io/github/robolib/util/log/LogOutput.html" title="interface in io.github.robolib.util.log"><code>LogOutput</code></a></dd>
 </dl>
 </li>
@@ -680,7 +680,7 @@ extends java.lang.Object</pre>
 <h4>registerOutput</h4>
 <pre>public abstract&nbsp;void&nbsp;registerOutput(<a href="../../../../../io/github/robolib/util/log/LogOutput.html" title="interface in io.github.robolib.util.log">LogOutput</a>&nbsp;out)</pre>
 <div class="block">Add an output to the logger for this object.
- 
+
  Adding a new output will add that output to the list so that it will output
  log data same as the console.</div>
 <dl>

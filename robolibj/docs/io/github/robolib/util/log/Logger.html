@@ -117,10 +117,10 @@ var activeTableTab = "activeTableTab";
 <pre>public final class <span class="typeNameLabel">Logger</span>
 extends <a href="../../../../../io/github/robolib/util/log/ILogger.html" title="class in io.github.robolib.util.log">ILogger</a></pre>
 <div class="block">A Logging class for the robot.
- 
+
  <p>Each Class that wishes to log must call the <code>Logger.get</code> method with itself
  as the only argument. This will return a new Logger object.</p>
- 
+
  <p>To log something, the Calling class must call the desired level method
  <code>info, debug, warn, error, fatal</code> with the message to be logged. If the
  calling the err or fatal classes, a Throwable object must be passed as a second
@@ -129,10 +129,10 @@ extends <a href="../../../../../io/github/robolib/util/log/ILogger.html" title="
  stack trace, and kill the robot.</p></div>
 <dl>
 <dt><span class="simpleTagLabel">Author:</span></dt>
-<dd>noriah Reuland <vix@noriah.dev></dd>
+<dd>noriah <vix@noriah.dev></dd>
 <dt><span class="seeLabel">See Also:</span></dt>
-<dd><a href="../../../../../io/github/robolib/util/log/ILogger.html" title="class in io.github.robolib.util.log"><code>ILogger</code></a>, 
-<a href="../../../../../io/github/robolib/util/log/LogOutput.html" title="interface in io.github.robolib.util.log"><code>LogOutput</code></a>, 
+<dd><a href="../../../../../io/github/robolib/util/log/ILogger.html" title="class in io.github.robolib.util.log"><code>ILogger</code></a>,
+<a href="../../../../../io/github/robolib/util/log/LogOutput.html" title="interface in io.github.robolib.util.log"><code>LogOutput</code></a>,
 <a href="../../../../../io/github/robolib/util/log/LogLevel.html" title="enum in io.github.robolib.util.log"><code>LogLevel</code></a></dd>
 </dl>
 </li>
@@ -599,7 +599,7 @@ extends <a href="../../../../../io/github/robolib/util/log/ILogger.html" title="
 <h4>registerOutput</h4>
 <pre>public&nbsp;void&nbsp;registerOutput(<a href="../../../../../io/github/robolib/util/log/LogOutput.html" title="interface in io.github.robolib.util.log">LogOutput</a>&nbsp;out)</pre>
 <div class="block">Add an output to the logger for this object.
- 
+
  Adding a new output will add that output to the list so that it will output
  log data same as the console.</div>
 <dl>
